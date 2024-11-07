@@ -1,0 +1,194 @@
+.screen {
+    width: 100%;
+    height: 100vh;
+
+    font-family: "Pixelify Sans", sans-serif;
+
+    background-color: #FDF0D5;
+
+    .tittle {
+        width: 100%;
+        height: 100px;
+
+        position: fixed;
+
+        z-index: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .tittleText {
+            font-size: 50px;
+
+            .redTittle {
+                color: #780000;
+            }
+
+            .smallText {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .game {
+        width: 100%;
+        height: 100vh;
+
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .gameInfo {
+            width: 500px;
+            height: 100px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 10px;
+            box-sizing: border-box;
+
+            font-size: 30px;
+
+            .redTittle {
+                color: #780000;
+            }
+        }
+
+        .gameBorder {
+            width: 500px;
+            height: 500px;
+
+            .object {
+                width: 100px;
+                height: 100px;
+
+                background-color: #003049;
+
+                border-radius: 20px;
+            }
+            
+            .object:active {
+                opacity: 0;
+                transition: .6s;
+            }
+        }
+    }
+
+    .start {
+        width: 100%;
+        height: 100vh;
+
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0.623);
+
+        .startButton {
+            width: 200px;
+            height: 100px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+
+            border-radius: 10px;
+
+            padding: 20px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            box-sizing: border-box;
+
+            background-color: #FDF0D5;
+
+            .playText {
+                font-size: 25px;
+                
+                color: #780000;
+            }
+
+            .tittleText {
+                font-size: 20px;
+    
+                .redTittle {
+                    color: #780000;
+                }
+    
+                .smallText {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .startButton:hover {
+            background-color: #ddd1b8;
+            transition: .4s;
+        }
+    }
+
+    .endGame {
+        width: 100%;
+        height: 100vh;
+
+        animation: schow 1s;
+
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0.623);
+
+        display: none;
+
+        .palyAgin {
+            width: 200px;
+            height: 100px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            border-radius: 10px;
+
+            padding: 20px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            box-sizing: border-box;
+
+            font-size: 25px;
+
+            background-color: #FDF0D5;
+
+            .redTittle {
+                color: #780000;
+            }
+        }
+        .palyAgin:hover {
+            background-color: #ddd1b8;
+            transition: .4s;
+        }
+    }
+}
+
+@keyframes schow {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+        opacity: 100;
+	}
+
+}
